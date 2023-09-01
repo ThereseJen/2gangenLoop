@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-loops</title>
+<style>
+body{
+background-color: wheat;
+}
+
+button {
+background-color: aqua;
+height: 40px;
+margin: 50px;
+}
+
+#nummer {
+margin-left: 100px;
+font-size: large;
+font-weight: bold;
+}
+</style>
+</head>
+
+<body>  
+<button onclick="printNumbers()">2-gangen</button>
+<div id="nummer"></div>
+
+<script>
+//Lag startvariabel i For.
+// Så en betingelse for hvor lenge løkken skal kjøre
+// Så hva som skal skje med startvariabelen
+function printNumbers() {
+let stopValue = 20;    //Hvor lenge den skal telle                 //Counter mindre, eller lik 20. Deretter at den skal øke med 2.
+for(let counter = 2; counter<=stopValue; counter = counter + 2) {                
+document.getElementById('nummer').innerHTML += '<li>' + counter + '</li>';
+}
+
+
+}
+
+
+</script>
+
+
+</body>
+</html>
